@@ -1,2 +1,3 @@
-# CPSC445w_Capstone
-Repository for my senior capstone project
+# Stitch: A customizable forum thread/post archiver
+
+Test
