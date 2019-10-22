@@ -1,0 +1,26 @@
+I have python 3.6.7
+    Using scrapy for web crawling of forums
+Using GitHub to host my projecrt repository
+    -LK5087, BargeAlpha89!
+Come up with use cases for my project
+How will I store the archived threads? Database or store in a file folder on client/host pc?
+Use HTML & Javascript to write UI, reference the local storage
+    - Create UI mockups
+
+Single thread as displayed in the 4chan/el catalog. Important is the first number, "482444351", which is the thread number and can be used to access the thread, ex "http://boards.4channel.org/v/thread/482444351". 
+
+date = the date represented as an int somehow
+file = the name of the image used to start the thread
+r = the number of replies
+i = the number of image replies
+lr = last reply, with the information about it
+b = ?
+author = name of user who created thread
+imgurl = where the image can be found, at http://is2.4chan.org/v/1571713462874.jpg
+tn_w = thumbnail width
+tn_h = thumbnail height
+sub = Bold title?
+teaser = Subtitle (non bold)
+
+{"threads":{"482444351":{"date":1571713462,"file":"YouTube.jpg","r":22,"i":4,"lr":{"id":482445874,"date":1571714624,"author":"Anonymous"},"b":0,"author":"Anonymous","imgurl":"1571713462874","tn_w":250,"tn_h":140,"sub":"","teaser":"Mario kart Tour is saved https:\/\/youtu.be\/mGvIDk4VBGY"}
+

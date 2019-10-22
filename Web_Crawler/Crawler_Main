@@ -1,0 +1,19 @@
+import urllib.request, urllib.error, urllib.parse
+
+while True:
+    try:
+        board = input("What board do you want to search?\n----> ")
+
+        url = 'http://4channel.org/' + board + '/catalog'
+
+        response = urllib.request.urlopen(url)
+        webContent = response.read()
+
+#        print(webContent[0:100])
+        f = open('board_catalog.html', 'w')
+        f.write(repr(webContent))
+        f.close
+        break
+
+    except:
+        print("Sorry, the board you entered does not exist.")
