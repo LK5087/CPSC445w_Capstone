@@ -23,3 +23,9 @@ teaser = Subtitle (non bold)
 
 {"threads":{"482444351":{"date":1571713462,"file":"YouTube.jpg","r":22,"i":4,"lr":{"id":482445874,"date":1571714624,"author":"Anonymous"},"b":0,"author":"Anonymous","imgurl":"1571713462874","tn_w":250,"tn_h":140,"sub":"","teaser":"Mario kart Tour is saved https:\/\/youtu.be\/mGvIDk4VBGY"}
 
+Downloaded python pip, directions at https://pip.pypa.io/en/stable/installing/
+Downloaded python pywebcopy to clone web pages, at https://pypi.org/project/pywebcopy/ (didn't work), also I think pywebcopy is python 2, which I should avoid
+
+cp -R path_to_source path_to_destination/ to copy files in a destination to another destination
+ 
+Use beautiful soup? Library to pull data out of html
