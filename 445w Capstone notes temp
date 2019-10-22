@@ -1,7 +1,6 @@
 I have python 3.6.7
     Using scrapy for web crawling of forums
 Using GitHub to host my projecrt repository
-    -LK5087, BargeAlpha89!
 Come up with use cases for my project
 How will I store the archived threads? Database or store in a file folder on client/host pc?
 Use HTML & Javascript to write UI, reference the local storage
