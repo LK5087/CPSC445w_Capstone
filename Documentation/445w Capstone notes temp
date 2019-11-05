@@ -29,3 +29,13 @@ Downloaded python pywebcopy to clone web pages, at https://pypi.org/project/pywe
 cp -R path_to_source path_to_destination/ to copy files in a destination to another destination
  
 Use beautiful soup? Library to pull data out of html
+
+Stop/start apache, sudo systemctl start/stop/restart httpd
+
+=============================================================================
+
+Where am I? Use Ec2 to put html on. Use python to search the web and save content on the sever. Use the html to acess the content and display it on the server. No DB, really. *phew*
+
+Stakeholders: Admin, users
+    - Admin has higher privleges than user. (Ability to control user access, turn service off and on, and delete/limit content)
+    - Users can set search parameters, and organize content into folders within their user space.
