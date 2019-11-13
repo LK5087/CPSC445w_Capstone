@@ -1,0 +1,12 @@
+Use case name: Create account
+Scenario: A new user wants to create an account in order to access the system.
+Triggering Event: A new user desires to use the system
+Brief Description: Create account page is accessed from the login screen, click the "new user" link. Enter the required information into the fields. Username (checks if available), password (Enter twice, stored as hash), and petition statement (500 chars or less). This information is sent to the database, and the petition statement is sent to the administrator for account approval.
+Actors: Users
+Stakeholders: Users
+Preconditions: User must click the "new user" link in the login page.
+Postconditions: User must wait until the account is approved before they are allowed to log on to the system.
+Flow of Activities: User: clicks on new user button     System: Directs user to new user page
+                    User: Fills in information and clicks "create account" button    System: Creates new DB entry and creates message for Admin
+                    User: After confirmation of account, refer to log in use case.
+Exception Conditions: Username is already taken, passwords do not match. Display error message and do not allow account creation until both are satisfied. 

@@ -1,0 +1,13 @@
+Template for Fully Developed Use Cases (FDUC)
+
+Use case name: Log In
+Scenario: User or administrator log into the system.
+Triggering Event: User or administrator want to access the system for any purpose.
+Brief Description: Users and administrators log in to the system by entering their username and password into the correct fields and clicking the log in button. The log in fields will check for SQL injection and other attacks by specifying/denying certain characters.
+Actors: Users and administrators
+Stakeholders: Users and administrators
+Preconditions: User or administrator must have an account in the system.
+Postconditions: The user or admin is directed to their respective home page, or, for invalid log in credentials, remain on login page are are notified. The notification will be red alert text underneath the log in fields.
+Flow of Activities: User: Access the log in page          System: Displays the log in prompt, with a log in button
+                    User: Enter credentials, hit button   System: Check credentials against DB entry, if valid, direct user to home page
+Exception Conditions: User credentials are in valid. -> System displays error message underneath fields and clears password field. 
