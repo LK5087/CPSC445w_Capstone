@@ -1,0 +1,18 @@
+Use case name: View content
+Scenario: View content from created searches
+Triggering Event: User or admin wants to view search content. 
+Brief Description: The user or admin clicks on the search page, and can view content of individual searches from there. The homepage will also display 5 or so of the most recent search results. Click on a search, then click on the available entries. Users can choose between appending searches to the existing list or creating new lists for every iteration (copying files)
+Actors: User/admin
+Stakeholders: User/admin
+Preconditions: User or admin has content available to view
+Postconditions: n/a, after viewing content nothing changes. 
+Flow of Activities: User: Clicks on search page button
+                    System: Redirects user to search page
+                    User: Clicks on a specific search
+                    System: Returns user to that specific search
+                    User: Can click on entry hyperlinks
+                    System: Displays entries in new tab
+Exception Conditions: Use case not relavent if user has no content to view; errors are unlikely. 
+
+Activity Diagram
+Flow Diagram

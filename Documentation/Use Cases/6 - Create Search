@@ -1,0 +1,19 @@
+Use case name: Create Search
+Scenario: A user or admin creates a scheduled search
+Triggering Event: A user or admin want to create a search.
+Brief Description: The user or admin select the create new search button on the searches page/tab. After clicking the button, the user is redirected to the create search page, with a back buttona and return to homepage/cancel button.
+                   The create search window will use dropdown menus to select options, with more appearing after selecting those above. 
+                   Options in vauge order: website, board, search terms (separate by comma), inclusive/exclusive search w/ terms, start date, repeat frequency, end (if any)
+Actors: Users and admins
+Stakeholders: Users and admins
+Preconditions: User or admin desire to create a new search, they have not hit the limit. 
+Postconditions: User or admin will see the search on their searches list, and can modifiy it. 
+Flow of Activities: User: Clicks on the search page button from the homepage. 
+                    User: Click on create new search   
+                    System: Directs user to new search page, allows user to cancel or go back
+                    User: Enters search info and then presses create search
+                    System: Creates search data under user folder, and puts search results into results folder
+Exception Conditions: The search cannot be created unless all fields are filled out. Options will exist for blank options in the dropdown
+
+Activity Diagram
+Flow Diagram

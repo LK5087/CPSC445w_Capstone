@@ -1,0 +1,17 @@
+Use case name: Delete content
+Scenario: Users and administrators will have the ability to delete user content
+Triggering Event: User or admin wants to delete content 
+Brief Description: A user or admin goes to view their content, selects one or more via a checkbox select system, and his the delete button at the top of the screen. A window appears saying, confirm delete selected, options being select or cancel.
+Actors: User, Admin
+Stakeholders: User, Admin
+Preconditions: User has content to be deleted
+Postconditions: The content is gone from the UI and the system
+Flow of Activities: This is the flow between the actor and the system
+    User: Selects content, hits delete button
+    System: Creates confirmation window
+    User: Selects confirm
+    System: Deletes content from user folder in system, and then refreshes page for the user. While deleting, user is directed to a "system working" page, then redirected to their content page after deletion.
+Exception Conditions: If the actor clicks the delete button with nothing selected, nothing should happen (Disregard the click). If user selects content, presses delete buttona and presses cancel, nothing happens and the window disappears. The checkboxes remain checked. (Buttons exist for clear all and select all)
+
+Activity Diagram
+Flow Diagram

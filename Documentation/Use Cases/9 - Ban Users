@@ -1,0 +1,20 @@
+Use case name: Ban Users
+Scenario: Admin can remove user accounts from the system
+Triggering Event: Admin wants to remove a user
+Brief Description: In the admin home page (similar to user home page), there is a button for admin tools. Clicking it redirects to the admin tools page. Click the ban user button, and the system displays a list of all users. Admin can select the checkbox by the user, and click the ban button. After this, the user's login information is removed from the database and the user folder is deleted from the system. 
+Actors: Admin
+Stakeholders: Admin, user
+Preconditions: Admin wants a user gone
+Postconditions: User account and all associated data is gone. 
+Flow of Activities: Admin: Clicks on admin tools button   
+                    System: redirects to admin tools page
+                    Admin: selects ban user button
+                    System: displays popup list of all users
+                    Admin: selects checkbox next to user and clicks ban button
+                    System: Asks admin to confirm
+                    Admin: Confirms
+                    System: Removes user account from DB and user folder from system. 
+Exception Conditions: If the user does not exist, display popup. 
+
+Activity Diagram
+Flow Diagram
