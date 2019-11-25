@@ -1,0 +1,10 @@
+.boxed {
+    border: 3px solid blue ;
+  } 
+
+.pad {
+  padding-top: 50px;
+  padding-right: 80px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}

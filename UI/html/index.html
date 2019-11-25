@@ -1,18 +1,24 @@
+<!-- index.html is the login screen for the site 
+     This fulfills use case 1 = - login -->
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>index</title>
     <script src="stitchJS.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/stitch.css">
   </head>
   <body>
-    <center>
+    <center><div class="pad">
       </br></br>
       <h2>Stitch <img src="blue-thread-clipart-14.jpg" alt="Stitch Logo" width="60" height="50" style="vertical-align:middle"></h2>
       </br>
+      <div class="boxed">
       <form id="loginForm">
         <input type="button" value="Log In" id="loginButton" onclick="window.location.href='login.html'">
       </form>
+      </div></div>
     </center>
   </body>
 </html>
