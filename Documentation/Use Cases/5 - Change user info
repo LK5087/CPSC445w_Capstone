@@ -1,0 +1,13 @@
+Use case name:
+Scenario:
+Triggering Event:
+Brief Description:
+Actors:
+Stakeholders:
+Preconditions:
+Postconditions:
+Flow of Activities: This is the flow between the actor and the system
+Exception Conditions: What causes the use case to fail.. incomplete fields, non valid information, permissions, etc.
+
+Activity Diagram
+Flow Diagram
