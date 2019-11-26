@@ -1,8 +1,25 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
   <head>
-    <title>Stitch Login</title>
+    <meta charset="utf-8">
+    <title>Welcome to Stitch!</title>
+    <script src="JS/stitch.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/stitch.css">
   </head>
   <body>
-    This is the Login page
+    <div style="padding: 50px 100px 50px 100px;">
+      <center>
+        <h2>Stitch <img src="media/blue-thread-clipart-14.jpg" alt=---Stitch Logo---" width="60" height="50" style="vertical-align:middle" onclick="moveToLoginPage();"></h2>
+      </center>
+      <div class="login_box">
+        Create a new user account:</br></br>
+        <center>
+            Username: <input type="text" name="username_field" id="username"></br></br></br>
+            Password: <input type="Password" name="password_field" id="password"></br></br>
+            Confirm Password: <input type="password" name="password_field_confirm" id="password_confirm"></br></br></br>
+            Email: <input type="text" name="email_field" id="email"></br></br>
+            <input type=button id="create_account" value="Create account" onclick="">
+        </center>
+      </div>
+    </div>
   </body>
-</html>

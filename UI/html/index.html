@@ -5,20 +5,22 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>index</title>
-    <script src="stitchJS.js"></script>
+    <title>Welcome to Stitch!</title>
+    <script src="JS/stitch.js"></script>
     <link rel="stylesheet" type="text/css" href="CSS/stitch.css">
   </head>
   <body>
-    <center><div class="pad">
-      </br></br>
-      <h2>Stitch <img src="blue-thread-clipart-14.jpg" alt="Stitch Logo" width="60" height="50" style="vertical-align:middle"></h2>
-      </br>
-      <div class="boxed">
-      <form id="loginForm">
-        <input type="button" value="Log In" id="loginButton" onclick="window.location.href='login.html'">
-      </form>
-      </div></div>
-    </center>
+    <div class="login_padding">
+      <h2>Stitch <img src="media/blue-thread-clipart-14.jpg" alt=---Stitch Logo---" width="60" height="50" style="vertical-align:middle"></h2>
+      <div class="login_box">
+        <form id="loginForm">
+         Username: <input type="text" name="username_field" id="username"></br></br>
+         Password: <input type="Password" name="password_field" id="password">
+         <input type="button" name="login_button" id="login" value="Login" onclick=""></br></br>
+         <input type="button" name="new_user_button" id="new_user" value="New user? Create account" onclick="moveToNewUserPage();">
+         <input type="button" name="forgot_password_button" id="forgot_password" value="Forgot password?" onclick="moveToForgotPasswordPage();">
+        </form>
+      </div>
+    </div>
   </body>
 </html>
