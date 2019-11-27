@@ -1,26 +1,32 @@
-import urllib.request, urllib.error, urllib.parse
+import urllib.request, urllib.error, urllib.parse, os, cgi
 
 # These variables will ultimately be set by user input from the html server
 # Ideally, the parameter input will be a series of drop downs, select the website and then the board.. etc.
-board = "v"
-website = "http://4channel.org/" + board + "/catalog/"
-searchstring = "mario"
 
-while True:
-    try:
-        board = input("What board do you want to search?\n----> ")
+form = cgi.FieldStorage()
 
-        url = 'http://4channel.org/' + board + '/catalog'
+# Variables passed to the program from the user
+username = form.getvalue(')
 
-        response = urllib.request.urlopen(url)
-        webContent = response.read()
+# Options - 4channel.org or reddit.com
+website = form.getvalue('website')
 
+# 4channel - g,po Reddit - nosleep, linux
+board = form.getvalue("board_subreddit")
 
-#       print(webContent[0:100])
-        f = open('board_catalog.html', 'w')
-        f.write(repr(webContent))
-        f.close
-        break
+keywords = ["keyword1", "keyword2"]
 
-    except:
-        print("Sorry, the board you entered does not exist.")
+# Applies to reddit and 4channel
+replies
+
+# Applies to reddit
+upvotes
+
+baseUrl = ""
+
+if website = "4channel.org":
+    baseUrl = "https://boards.4channel.org/" + board + "/catalog"
+if website = "reddit.com"
+    baseUrl = "https://www.reddit.com/r/" + board 
+
+  

@@ -12,3 +12,18 @@
   padding-left: 100px;
   text-align: center;
 }
+div#banner { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  background-color: #DDEEEE; 
+  width: 100%; 
+}
+div#banner-content { 
+  width: 800px; 
+  margin: 0; 
+  padding: 20px; 
+}
+div#main-content { 
+  padding-top: 70px;
+}

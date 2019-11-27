@@ -1,6 +1,0 @@
-from pywebcopy import save_webpage
-
-url = 'http://boards.4channel.org/v/thread/482444351'
-download_folder = '/home/fezwez/Stitch_Content'
-
-save_webpage(url, download_folder)
