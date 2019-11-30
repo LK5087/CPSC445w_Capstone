@@ -13,14 +13,15 @@
     <div class="login_padding">
       <h2>Stitch <img src="media/blue-thread-clipart-14.jpg" alt=---Stitch Logo---" width="60" height="50" style="vertical-align:middle"></h2>
       <div class="login_box">
-        <form id="loginForm">
+     
+        <form id="loginForm" action="cgi-bin/login.py" method="POST">
          Username: <input type="text" name="username_field" id="username"></br></br>
          Password: <input type="Password" name="password_field" id="password">
-         <input type="button" name="login_button" id="login" value="Login" onclick=""></br></br>
+         <input type="submit" value="Login"></br></br>
+      </form>
          <input type="button" name="new_user_button" id="new_user" value="New user? Create account" onclick="moveToNewUserPage();">
          <input type="button" name="forgot_password_button" id="forgot_password" value="Forgot password?" onclick="moveToForgotPasswordPage();">
-         <a href="new_search.html">new search</a>
-        </form>
+ 
       </div>
     </div>
   </body>

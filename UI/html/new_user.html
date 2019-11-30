@@ -14,11 +14,12 @@
       <div class="login_box">
         Create a new user account:</br></br>
         <center>
+          <form action="cgi-bin/new_user.py" method="POST">
             Username: <input type="text" name="username_field" id="username"></br></br></br>
             Password: <input type="Password" name="password_field" id="password"></br></br>
             Confirm Password: <input type="password" name="password_field_confirm" id="password_confirm"></br></br></br>
             Email: <input type="text" name="email_field" id="email"></br></br>
-            <input type=button id="create_account" value="Create account" onclick="">
+            <input type="submit" value="submit">
         </center>
       </div>
     </div>
