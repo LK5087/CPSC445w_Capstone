@@ -61,85 +61,87 @@
         </div>
     </div>
     <div id="main-content">
-        <table width=100% height=100%>
-            <tr>
-                <td width=50% style="vertical-align: top; padding-left: 175px">
+        <!-- Overall form emcompassing all of the fields and inputs; beleive it is necessary for CGI enabling. Action element prompts to open Crawler_Main.py -->
+        <form id="new_search_form" action="/home/owo/Git/CPSC445w_Capstone/Web_Crawler/Crawler_Main.py" method="POST">
+            <table width=100% height=100%>
+                <tr>
+                    <td width=50% style="vertical-align: top; padding-left: 175px">
 
-                    </br>
-                    <!-- Radio buttons for the website, when one is selected, website specific options are enabled (Reddit upvotes, 4channel reply counts)-->
-                    Website:
-                    <input type="radio" name="website" id="4c" value="4channel.org">4channel.org
-                    <input type="radio" name="website" id="re" value="reddit.com">reddit.com
-                    <input type="button" id="website_submit" value="Submit" onclick="choose_website();">
-                    </br></br>
-                    <!-- Board option for 4channel (sfw ones obv, also no images (be on the safe side)) -->
-                    <!-- Deal with spacing! Better solution than a million &nbsp's-->
-                    Board:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <select id="board" disabled>
-                        <option value="g/catalog">/g/ - technology</option>
-                        <option value="out/catalog">/out/ - outdoors</option>
-                        <option value="an/catalog">/an/ - animals and nature</option>
-                    </select>
-                    </br></br>
-                    <!-- Subreddit option for Reddit -->
-                    Subreddit:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <select id="subreddit" disabled>
-                        <option value="nosleep/top/?t=day">r/nosleep</option>
-                        <option value="linux/top/?t=day">r/linux</option>
-                        <option value="ImaginaryWastelands/top/?t=day">r/imaginarywastelands</option>
-                    </select>
-                    </br></br>
-                    <!-- Reply count (for 4channel) -->
-                    Reply count:&nbsp;&nbsp;
-                    <select id="reply_gr_ls" disabled>
-                        <option value=">=">>=</option>
-                        <option value="<="><=</option> 
-                    </select> <!-- must be in ints, and greater than 0-->
-                    <input type="number" id="reply_count" disabled>
-                    </br></br>
-                    <!-- Number of upvotes (for reddit)-->
-                    Upvote count:
-                        <select id="upvote_gr_ls" disabled>
-                            <option value=">=">>=</option>
-                            <option value="<="><=</option>  
+                        </br>
+                        <!-- Radio buttons for the website, when one is selected, website specific options are enabled (Reddit upvotes, 4channel reply counts)-->
+                        Website:
+                        <input type="radio" name="website" id="4c" value="4channel.org">4channel.org
+                        <input type="radio" name="website" id="re" value="reddit.com">reddit.com
+                        <input type="button" id="website_submit" value="Submit" onclick="choose_website();">
+                        </br></br>
+                        <!-- Board option for 4channel (sfw ones obv, also no images (be on the safe side)) -->
+                        <!-- Deal with spacing! Better solution than a million &nbsp's-->
+                        Board:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <select id="board" disabled>
+                            <option value="g/catalog">/g/ - technology</option>
+                            <option value="out/catalog">/out/ - outdoors</option>
+                            <option value="an/catalog">/an/ - animals and nature</option>
                         </select>
-                     <!-- must be in ints, and greater than 0-->
-                        <input type="number" id="upvote_count" disabled>
-                    </br></br>
-                    <!-- Key words.. must separate by comma, or whole string will be searched for... won't break but won't get results-->
-                    Keywords:
-                    <input type="text" id="keywords" disabled></br>
-                    <p style="font-size: 80%;"><i>Separate values with a comma</i></p>
-                </td>
-                <td width=50px>
-                    </br>
-                    <!-- Start date must be equal to or greater than the current date -->
-                    Start date:&nbsp;
-                    <input type="date" id="start_date" disabled></br></br>
-                    <!-- If current date, if start time is less than current time, search runs immediately-->
-                    Start time:&nbsp;
-                    <input type="time" id="start_time" disabled></br></br>
-                    <!-- Frequency must be in # of whole hours, minumum 1, int -->
-                    Frequency:
-                    <input type="number" id="frequency" disabled></br></br>
-                    <!-- End date, program calculates all scheduled runs until this date, must be less than a year (end date - start date > 1 year-->
-                    End date:&nbsp;&nbsp;&nbsp;
-                    <input type="date" id="end_date" disabled></br></br>
-                    <!-- Search name, used for folder title -->
-                    Search name:</br>
-                    <input type="text" id="search_name" maxlength="25" disabled></br></br>
-                    <!-- Search description, stored in the search folder as an html file -->
-                    Search Description:</br>
-                    <textarea rows="4" cols="29" id="search_description" maxlength="250"
-                        placeholder="Give a brief search description.." style="resize:none;" disabled>
+                        </br></br>
+                        <!-- Subreddit option for Reddit -->
+                        Subreddit:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <select id="subreddit" disabled>
+                            <option value="nosleep/top/?t=day">r/nosleep</option>
+                            <option value="linux/top/?t=day">r/linux</option>
+                            <option value="ImaginaryWastelands/top/?t=day">r/imaginarywastelands</option>
+                        </select>
+                        </br></br>
+                        <!-- Reply count (for 4channel) -->
+                        Reply count:&nbsp;&nbsp;
+                        <select id="reply_gr_ls" disabled>
+                            <option value=">=">>=</option>
+                            <option value="<=">
+                                <=</option> </select> <!-- must be in ints, and greater than 0-->
+                                    <input type="number" id="reply_count" disabled>
+                                    </br></br>
+                                    <!-- Number of upvotes (for reddit)-->
+                                    Upvote count:
+                                    <select id="upvote_gr_ls" disabled>
+                                        <option value=">=">>=</option>
+                                        <option value="<=">
+                                            <=</option> </select> <!-- must be in ints, and greater than 0-->
+                                                <input type="number" id="upvote_count" disabled>
+                                                </br></br>
+                                                <!-- Key words.. must separate by comma, or whole string will be searched for... won't break but won't get results-->
+                                                Keywords:
+                                                <input type="text" id="keywords" disabled></br>
+                                                <p style="font-size: 80%;"><i>Separate values with a comma</i></p>
+                    </td>
+                    <td width=50px>
+                        </br>
+                        <!-- Start date must be equal to or greater than the current date -->
+                        Start date:&nbsp;
+                        <input type="date" id="start_date" disabled></br></br>
+                        <!-- If current date, if start time is less than current time, search runs immediately-->
+                        Start time:&nbsp;
+                        <input type="time" id="start_time" disabled></br></br>
+                        <!-- Frequency must be in # of whole hours, minumum 1, int -->
+                        Frequency:
+                        <input type="number" id="frequency" disabled></br></br>
+                        <!-- End date, program calculates all scheduled runs until this date, must be less than a year (end date - start date > 1 year-->
+                        End date:&nbsp;&nbsp;&nbsp;
+                        <input type="date" id="end_date" disabled></br></br>
+                        <!-- Search name, used for folder title -->
+                        Search name:</br>
+                        <input type="text" id="search_name" maxlength="25" disabled></br></br>
+                        <!-- Search description, stored in the search folder as an html file -->
+                        Search Description:</br>
+                        <textarea rows="4" cols="29" id="search_description" maxlength="250"
+                            placeholder="Give a brief search description.." style="resize:none;" disabled>
                     </textarea>
-                </br></br>
-                <!-- Resets the form by reloading the page -->
-                <a href="">Reset form</a>
-                <input type="submit" id="new_search_submit" value="Create search">
-                </td>
-            </tr>
-        </table>
+                        </br></br>
+                        <!-- Resets the form by reloading the page -->
+                        <a href="">Reset form</a>
+                        <input type="submit" value="Submit search">
+                    </td>
+                </tr>
+            </table>
+        </form>
     </div>
 </body>
 
