@@ -1,4 +1,10 @@
-import urllib.request, urllib.error, urllib.parse, os, cgi
+#!/usr/bin/python
+
+print("Content-type: text/html\n\n")
+
+# Importing urllib to fetch html from urls, os to perform file I/O, and cgi to interact with httpd web server
+# Python2, so urllib is one import and not split
+import urllib, os, cgi
 
 # Liam Kempton
 # =====================================================
@@ -6,10 +12,10 @@ import urllib.request, urllib.error, urllib.parse, os, cgi
 # and retrieves and stores content locally for later use.
 # It uses http post on the Apache httpd web server. 
 # ===================================================== 
-print "test1"
+
 # Creating fieldStorage, which stores the values from the post message
 form = cgi.FieldStorage()
-print "test2"
+print ("test2")
 # Get data from the fields sent over in post from new search form
 if form.getvalue("website"):
     website = form.getvalue("website")
@@ -36,15 +42,15 @@ search_description = form.getvalue("search_description")
 # Keyword (properly separated by commas) can be split in one line to make an array
 keywords = form.getvalue("keywords").split(',')
 
-print "Content-type:text/html\r\n\r\n"
-print "<html>"
-print "<head>"
-print "<title>test_successful_posting</title>"
-print "</head>"
-print "<body>"
-print "<h2> Selected website is %s</h2>" % website
-print "</body>"
-print "</html>"
+print ("Content-type:text/html\r\n\r\n")
+print ("<html>")
+print ("<head>")
+print ("<title>test_successful_posting</title>")
+print ("</head>")
+print ("<body>")
+print ("<h2> Selected website is %s</h2>") % website
+print ("</body>")
+print ("</html>")
 
 
 
