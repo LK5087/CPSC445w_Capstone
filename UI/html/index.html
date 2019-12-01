@@ -2,7 +2,7 @@
      This fulfills use case 1 = - login -->
 
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang='en' dir='ltr'>
   <head>
     <meta charset="utf-8">
     <title>Welcome to Stitch!</title>
@@ -11,13 +11,20 @@
   </head>
   <body>
     <div class="login_padding">
-      <h2>Stitch <img src="media/blue-thread-clipart-14.jpg" alt=---Stitch Logo---" width="60" height="50" style="vertical-align:middle"></h2>
+      <pre>
+         ______     ______   __     ______   ______     __  __    
+        /\  ___\   /\__  _\ /\ \   /\__  _\ /\  ___\   /\ \_\ \   
+        \ \___  \  \/_/\ \/ \ \ \  \/_/\ \/ \ \ \____  \ \  __ \  
+         \/\_____\    \ \_\  \ \_\    \ \_\  \ \_____\  \ \_\ \_\ 
+          \/_____/     \/_/   \/_/     \/_/   \/_____/   \/_/\/_/ 
+      
+      </pre>
       <div class="login_box">
      
         <form id="loginForm" action="cgi-bin/login.py" method="POST">
          Username: <input type="text" name="username_field" id="username"></br></br>
          Password: <input type="Password" name="password_field" id="password">
-         <input type="submit" value="Login"></br></br>
+         <input type="submit" value='Login'></br></br>
       </form>
          <input type="button" name="new_user_button" id="new_user" value="New user? Create account" onclick="moveToNewUserPage();">
          <input type="button" name="forgot_password_button" id="forgot_password" value="Forgot password?" onclick="moveToForgotPasswordPage();">

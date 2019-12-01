@@ -58,9 +58,14 @@ if website == "4channel.org":
     source_url = "https://boards.4channel.org/" + board
 
 # Grabbing the source url and storing it for parsing out information
-response = urllib.request.urlopen(source_url)
-webContent = response.read()
-print (webContent[0:100])
+print(source_url + "</br>")
+
+response = urllib.urlopen(source_url)
+site_html = response.read()
+
+# The site html is now contained within site_html variable, ready to begin searching
+# Putting all threads into a list
+begin_position = site_html.find('threads":{"')
 
 print ("<html>")
 print ("<head>")
