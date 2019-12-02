@@ -1,6 +1,6 @@
 import urllib
 
-response = urllib.urlopen("https://boards.4channel.org/g/catalog")
+response = urllib.urlopen("https://boards.4chan.org/r9k/catalog")
 site_html = response.read()
 
 # The site html is now contained within site_html variable, ready to begin searching
@@ -34,9 +34,12 @@ while (current_position != -1):
     sub = site_html[back_position:current_position]
     # Teaser (description)
     back_position = site_html.find('"teaser":"', current_position) + len('"teaser":"')
-    current_position = site_html.find('"},', back_position)
+    current_position = site_html.find('"}', back_position)
     teaser = site_html[back_position:current_position]
-    # End retreive after last thread
 
     print ("Thread number:" + thread_number + "\ndate:" + date + "\nfilename:" + filename + "\nnum_replies:" + num_replies + "\nnum_images:" + num_images + "\nThread title:" + sub + "\nteaser:" + teaser + "\n")
     
+    
+    # End retreive after last thread
+    if(site_html.find('},"count"', current_position, (current_position + 12)) != -1):
+        break
