@@ -1,46 +1,15 @@
-# Stitch: A customizable forum thread/post archiver
+# Stitch: A customizable forum content archiver
 
 
 
-## Nov 27:
+### What is stitch?
 
-* Worked on some of the html parsing stuff
-* learned python!   
-
-learned some markdown syntax
-
------
-
-1. one
-1. two 
-5. three test tesdt
-
-__formating bold__
-
-example of a table
-
-|name | notes |
-|----:|-------|
-|Foo  | the name of the var = foo|
-|bob  | name of another var|
-
-* example of a code block
-
-```python
-if var is True:
-    print("boo")
-```
-
-inline monospace code block  
-` some code hre `
-
-# Big heading
-## smaller 
-### even smaller
-#### really small
-##### supper small
+    Stitch is a forum archiver system that accepts user input and automatically retreives content and stores it locally in an organized way on a web server.
 
 
-## older:
-did some stuff
+### Stitch is:
+
+1. Reliable - Parsing should be very unlikely to return errors
+1. Customizable - Adding support for new forums is easy, only need to get the parsing down
+5. Searchable - The stitch UI is organized in a simple, logical way which is conducive for searching
 

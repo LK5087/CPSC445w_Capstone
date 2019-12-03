@@ -51,18 +51,27 @@
 </head>
 
 <body>
-    <div id="banner">
-        <div id="banner-content">
-            Welcome to Stitch, **USERNAME HERE**
-            <img src="media/blue-thread-clipart-14.jpg" alt=---Stitch Logo---" width="150" height="30"
-                style="vertical-align:middle"></h2>
-            <a href="">User Settings</a>
-            <a href="">Log off</a>
-        </div>
+    <div id="login-padding">
+        <center>
+            <pre style="background: #3dc1d4; border-radius: 25px;"><b>
+                ______     ______   __     ______   ______     __  __    
+               /\  ___\   /\__  _\ /\ \   /\__  _\ /\  ___\   /\ \_\ \   
+               \ \___  \  \/_/\ \/ \ \ \  \/_/\ \/ \ \ \____  \ \  __ \  
+                \/\_____\    \ \_\  \ \_\    \ \_\  \ \_____\  \ \_\ \_\ 
+                 \/_____/     \/_/   \/_/     \/_/   \/_____/   \/_/\/_/ 
+             
+             </b></pre>
+        
+        <form action="http://ec2-54-224-12-132.compute-1.amazonaws.com/"><input type="submit" value="Homepage"></form>
+        <form action="http://ec2-54-224-12-132.compute-1.amazonaws.com/stitch_content/main_page.html"><input
+                type="submit" value="View Content"></form>
+            </center>
     </div>
     <div id="main-content">
         <!-- Overall form encompassing all of the fields and inputs; believe it is necessary for CGI enabling. Action element prompts to open Crawler_Main.py -->
         <form id="new_search_form" action="cgi-bin/web_crawler.py" method="POST">
+            <h3 style="padding-left: 175px">New Search</h3>
+            <p style="padding-left: 175px">Please fill in all appropriate fields</p>
             <table width=100% height=100%>
                 <tr>
                     <td width=50% style="vertical-align: top; padding-left: 175px">

@@ -1,0 +1,10 @@
+Problem Description
+I read many online forums as a source of news and entertainment; however, most of the content on theseforums is impermanent. 
+This means that over time, old content is removed as new content is generated. Stitch, a web-based forum archiever, will be able to 
+grab and store forum content permanently on a web server for later consumption by the user. 
+
+System Capabilities
+The system will be able to:
+- Access and search several forums, and be expandable for the addition of more
+- Process and handle several requests at once;
+- Accurately use user input parameters to return relavant content

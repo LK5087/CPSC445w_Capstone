@@ -11,24 +11,17 @@
   </head>
   <body>
     <div class="login_padding">
-      <pre>
+      <pre style="background: #3dc1d4; border-radius: 25px;"><b>
          ______     ______   __     ______   ______     __  __    
         /\  ___\   /\__  _\ /\ \   /\__  _\ /\  ___\   /\ \_\ \   
         \ \___  \  \/_/\ \/ \ \ \  \/_/\ \/ \ \ \____  \ \  __ \  
          \/\_____\    \ \_\  \ \_\    \ \_\  \ \_____\  \ \_\ \_\ 
           \/_____/     \/_/   \/_/     \/_/   \/_____/   \/_/\/_/ 
       
-      </pre>
-      <div class="login_box">
-     
-        <form id="loginForm" action="cgi-bin/login.py" method="POST">
-         Username: <input type="text" name="username_field" id="username"></br></br>
-         Password: <input type="Password" name="password_field" id="password">
-         <input type="submit" value='Login'></br></br>
-      </form>
-         <input type="button" name="new_user_button" id="new_user" value="New user? Create account" onclick="moveToNewUserPage();">
-         <input type="button" name="forgot_password_button" id="forgot_password" value="Forgot password?" onclick="moveToForgotPasswordPage();">
- 
+      </b></pre>
+      <div style="border: 3px solid navy ;border-radius: 25px;padding-top: 10px;padding-bottom: 10px;padding-left: 20px;padding-right: 20px;text-align: center">
+        <form action="http://ec2-54-224-12-132.compute-1.amazonaws.com/stitch_content/main_page.html"><input type="submit" value="View Content"></form>
+        <form action="http://ec2-54-224-12-132.compute-1.amazonaws.com/new_search.html"><input type="submit" value="New Search"></form>
       </div>
     </div>
   </body>

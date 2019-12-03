@@ -13,5 +13,4 @@ Flow of Activities: This is the flow between the actor and the system
     System: Deletes content from user folder in system, and then refreshes page for the user. While deleting, user is directed to a "system working" page, then redirected to their content page after deletion.
 Exception Conditions: If the actor clicks the delete button with nothing selected, nothing should happen (Disregard the click). If user selects content, presses delete buttona and presses cancel, nothing happens and the window disappears. The checkboxes remain checked. (Buttons exist for clear all and select all)
 
-Activity Diagram
-Flow Diagram
+

@@ -14,5 +14,3 @@ Flow of Activities: User: Clicks on search page button
                     System: Displays entries in new tab
 Exception Conditions: Use case not relavent if user has no content to view; errors are unlikely. 
 
-Activity Diagram
-Flow Diagram

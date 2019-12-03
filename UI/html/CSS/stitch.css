@@ -1,5 +1,6 @@
 .login_box {
     border: 3px solid navy ;
+    border-radius: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
@@ -26,5 +27,5 @@ div#banner-content {
   padding: 20px; 
 }
 div#main-content { 
-  padding-top: 80px;
+
 }

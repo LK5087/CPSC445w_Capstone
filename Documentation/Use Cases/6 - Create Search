@@ -15,5 +15,3 @@ Flow of Activities: User: Clicks on the search page button from the homepage.
                     System: Creates search data under user folder, and puts search results into results folder
 Exception Conditions: The search cannot be created unless all fields are filled out. Options will exist for blank options in the dropdown
 
-Activity Diagram
-Flow Diagram
